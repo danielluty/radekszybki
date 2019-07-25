@@ -1,0 +1,47 @@
+/* *** GENERAL STYLING *** */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+height: 100%;
+}
+
+body {
+    background: url('../../img/kontynenty-radek.svg') no-repeat fixed;
+    background-size: 90%;
+    background-position: center;
+    background-color: $bg-color;
+    font-family: $main-font;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $text-dimmed;
+    &:hover {
+        color: $text-color;
+    }
+}
+
+
+/* *** Media Queries *** */
+
+@include desktop-small {
+    body {
+        background-size: cover;
+    }
+}
