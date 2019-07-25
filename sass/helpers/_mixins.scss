@@ -1,7 +1,13 @@
 /* *** MIXINS *** */
 
-@mixin desktop-small {
+@mixin desktop-s {
     @media only screen and (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin desktop-xs {
+    @media only screen and (max-width: 992px) {
         @content;
     }
 }
@@ -13,7 +19,7 @@
 }
 
 @mixin phone {
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 667px) {
         @content;
     }
 }

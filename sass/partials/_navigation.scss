@@ -1,11 +1,119 @@
 /* *** NAVIGATION *** */
 
+.navigation {
+    .nav--desktop {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1.7rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+
+        li {
+            a {
+                border-radius: 1px;
+                transition: background .3s, color .2s;
+                outline: none;
+
+                img {
+                    width: 250px;
+                    opacity: .9;
+                    padding-top: .5rem;
+                }
+
+                &.link-effect {
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 2px;
+                        background: $text-dimmed;
+                        transition: width .3s;
+                    }
+
+                    &:hover {
+                        &::after {
+                            width: 98%;
+                            transition: width .3s;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .logo--mobile, .nav--mobile {
+        display: none;
+    }
+}
 
 /* *** Media Queries *** */
+
+@include desktop-s {
+    .navigation {
+        .nav--desktop {
+            font-size: 1.5rem;
+
+            li {
+                a {
+                    img {
+                        width: 180px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include desktop-xs {
+    .navigation {
+        .nav--desktop {
+            font-size: 1.35rem;
+            justify-content: space-between;
+            padding: 0 2rem 0 1rem;
+            font-size: 1.35rem;
+
+            li {
+                a {
+                    img {
+                        width: 150px;
+                    }
+                }
+
+                &:nth-child(3) {
+                    order: -1;
+                }
+            }
+        }
+    }
+}
+
 @include tablet {
-    
+    .navigation {
+        .nav--desktop {
+            li {
+                a {
+                    img {
+
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include phone {
-    
+    .navigation {
+        .nav--desktop {
+            li {
+                a {
+                    img {
+
+                    }
+                }
+            }
+        }
+    }
 }

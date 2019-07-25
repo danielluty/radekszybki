@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
 /* *** VARIABLES *** */
 /* Colors */
-$text-color: #dcdcf0;
-$text-dimmed: #b6b6d4;
+$text-color: rgba(220, 220, 240, .95);
+$text-dimmed: rgba(220, 220, 240, .8);
 
-$link-bg: rgba(74, 70, 65, .8);
+$link-bg-color: rgba(74, 70, 65, .8);
 
 $bg-color: #1d191e;
 $bg-dimmed: rgba(29, 25, 30, 0.95);
 
 /* Fonts */
+$main-font: 'Montserrat', sans-serif;
 $header-font: 'M PLUS 1p', sans-serif;
-$main-font: 'M PLUS 1p', sans-serif;

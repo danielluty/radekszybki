@@ -7,7 +7,7 @@
      * 2. Prevent adjustments of font size after orientation changes in
      *    IE on Windows Phone and in iOS.
      */
-@import url("https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -428,11 +428,12 @@ body {
   height: 100%; }
 
 body {
-  background: url("../../img/kontynenty-radek.svg") no-repeat fixed;
-  background-size: 90%;
-  background-position: center;
-  background-color: #1d191e;
-  font-family: "M PLUS 1p", sans-serif; }
+  background: fixed -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(29, 25, 30, 0.99)), to(rgba(29, 25, 30, 0.88))), fixed url("../../img/kontynenty-radek.svg") center/90% no-repeat, #1d191e;
+  background: fixed -webkit-linear-gradient(rgba(29, 25, 30, 0.99) 30%, rgba(29, 25, 30, 0.88)), fixed url("../../img/kontynenty-radek.svg") center/90% no-repeat, #1d191e;
+  background: fixed -o-linear-gradient(rgba(29, 25, 30, 0.99) 30%, rgba(29, 25, 30, 0.88)), fixed url("../../img/kontynenty-radek.svg") center/90% no-repeat, #1d191e;
+  background: fixed linear-gradient(rgba(29, 25, 30, 0.99) 30%, rgba(29, 25, 30, 0.88)), fixed url("../../img/kontynenty-radek.svg") center/90% no-repeat, #1d191e;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(220, 220, 240, 0.95); }
 
 img,
 svg {
@@ -443,14 +444,83 @@ ul {
 
 a {
   text-decoration: none;
-  color: #b6b6d4; }
+  color: rgba(220, 220, 240, 0.8); }
   a:hover {
-    color: #dcdcf0; }
+    color: rgba(220, 220, 240, 0.95); }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
 
 /* *** Media Queries *** */
 @media only screen and (max-width: 1280px) {
   body {
-    background-size: cover; } }
+    background-size: cover; }
+  .wrapper {
+    max-width: 1000px;
+    margin: 0 auto; } }
 
 /* *** NAVIGATION *** */
+.navigation .nav--desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .2rem; }
+  .navigation .nav--desktop li a {
+    border-radius: 1px;
+    -webkit-transition: background .3s, color .2s;
+    -o-transition: background .3s, color .2s;
+    transition: background .3s, color .2s;
+    outline: none; }
+    .navigation .nav--desktop li a img {
+      width: 250px;
+      opacity: .9;
+      padding-top: .5rem; }
+    .navigation .nav--desktop li a.link-effect::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: rgba(220, 220, 240, 0.8);
+      -webkit-transition: width .3s;
+      -o-transition: width .3s;
+      transition: width .3s; }
+    .navigation .nav--desktop li a.link-effect:hover::after {
+      width: 98%;
+      -webkit-transition: width .3s;
+      -o-transition: width .3s;
+      transition: width .3s; }
+
+.navigation .logo--mobile, .navigation .nav--mobile {
+  display: none; }
+
 /* *** Media Queries *** */
+@media only screen and (max-width: 1280px) {
+  .navigation .nav--desktop {
+    font-size: 1.5rem; }
+    .navigation .nav--desktop li a img {
+      width: 180px; } }
+
+@media only screen and (max-width: 992px) {
+  .navigation .nav--desktop {
+    font-size: 1.35rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 2rem 0 1rem;
+    font-size: 1.35rem; }
+    .navigation .nav--desktop li a img {
+      width: 150px; }
+    .navigation .nav--desktop li:nth-child(3) {
+      -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+      order: -1; } }

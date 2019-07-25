@@ -13,11 +13,11 @@ height: 100%;
 }
 
 body {
-    background: url('../../img/kontynenty-radek.svg') no-repeat fixed;
-    background-size: 90%;
-    background-position: center;
-    background-color: $bg-color;
+    background: fixed linear-gradient(rgba(29, 25, 30, .99) 30%, rgba(29, 25, 30, .88)), 
+                fixed url('../../img/kontynenty-radek.svg') center / 90% no-repeat, 
+                $bg-color;
     font-family: $main-font;
+    color: $text-color;
 }
 
 img,
@@ -37,11 +37,33 @@ a {
     }
 }
 
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 /* *** Media Queries *** */
 
-@include desktop-small {
+@include desktop-s {
     body {
         background-size: cover;
     }
+
+    .wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+}
+
+@include desktop-xs {
+    body {
+
+    }
+
+    .wrapper {
+
+    }
+
 }
