@@ -28,6 +28,7 @@
                         display: block;
                         width: 0;
                         height: 2px;
+                        margin-top: 4px;
                         background: $text-dimmed;
                         transition: width .3s;
                     }
@@ -44,12 +45,14 @@
         }
     }
 
-    .logo--mobile, .nav--mobile {
+    .nav--mobile,
+    .logo--mobile,
+    .toggler {
         display: none;
     }
 }
 
-/* *** Media Queries *** */
+/* *** NAVIGATION: Media Queries *** */
 
 @include desktop-s {
     .navigation {
@@ -93,27 +96,80 @@
 @include tablet {
     .navigation {
         .nav--desktop {
+            font-size: 1.2rem;
+
             li {
                 a {
                     img {
-
+                        width: 135px;
                     }
                 }
             }
         }
     }
+
+
 }
 
 @include phone {
     .navigation {
-        .nav--desktop {
-            li {
-                a {
-                    img {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 1.1rem;
 
-                    }
+        .nav--desktop {
+            display: none;
+        }
+
+        .nav--mobile {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: $bg-dimmed;
+
+            &.show-nav {
+                display: flex;
+            }
+
+            .close-btn {
+                font-size: 2rem;
+                font-weight: 500;
+                border: 1px solid $text-dimmed;
+                position: absolute;
+                right: 1.5rem;
+                top: 1.5rem;
+                padding: .3rem .8rem;
+                cursor: pointer;
+            }
+
+            li {
+                padding: 2rem 0;
+
+                a {
+                    font-size: 1.7rem;
                 }
             }
+        }
+
+        .logo--mobile {
+            display: inline-block;
+            width: 110px;
+        }
+
+        .toggler {
+            display: inline-block;
+            cursor: pointer;
+            font-size: 1.4rem;
+            font-weight: 500;
+            border: 1px solid $text-dimmed;
+            padding: .5rem;
         }
     }
 }

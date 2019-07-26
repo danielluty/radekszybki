@@ -1,0 +1,83 @@
+/* *** CONTACT *** */
+
+.main-contact {
+    width: 60%;
+    font-size: 1.4rem;
+
+    h1 {
+        margin-top: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        input,
+        textarea,
+        button {
+            font-family: $main-font;
+            font-size: 1.3rem;
+            padding: .9rem;
+            margin-top: .8rem;
+            border-radius: .1rem;
+            outline: none;
+            border: none;
+            background: $text-color;
+        }
+
+        button {
+            cursor: pointer;
+            padding: .6rem;
+            width: 13rem;
+            height: 51px;
+           
+            align-self: flex-end;
+
+            &:hover {
+                border: 2px solid rgb(116, 30, 30);
+            }
+        }
+
+    }
+
+    p {
+        margin-top: 2rem;
+    }
+
+    .social-media {
+        text-align: center;
+
+        i {
+            font-size: 4rem;
+            margin: 2rem;
+        }
+    }
+}
+
+/* *** CONTACT: Media Queries *** */
+
+@include desktop-xs {
+    .main-contact {
+        font-size: 1.3rem;
+
+        .social-media {
+            i {
+                font-size: 3rem;
+            }
+            
+        }
+    }
+}
+
+@include phone-s {
+    .main-contact {
+        font-size: 1.3rem;
+
+        .social-media {
+            i {
+                font-size: 3rem;
+                margin-top: 0;
+            }
+        }
+    }
+}
