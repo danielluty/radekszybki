@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
 	<div class="wrapper">
 
 		<!-- NAVIGATION -->
@@ -23,11 +22,11 @@
 
 			<!-- Desktop Navigation -->
 			<ul class="nav--desktop">
-				<li><a href="./index.html" class="link-effect">Info</a></li>
-				<li><a href="./galerie.html" class="link-effect">Galerie</a></li>
+				<li><a href="./index.html">Info</a></li>
+				<li><a href="./galerie.html">Galerie</a></li>
 				<li><a href="./index.html"><img src="./img/logo-light.svg" alt="Logo"></a></li>
-				<li><a href="./news.html" class="link-effect">News</a></li>
-				<li><a href="#" class="link-effect active">Kontakt</a></li>
+				<li><a href="./news.html">News</a></li>
+				<li><a href="#" class="active">Kontakt</a></li>
 			</ul>
 
 			<!-- Mobile Navigation -->
@@ -49,12 +48,15 @@
 
 		<!-- CONTENT -->
 		<main class="main-contact">
-			<h1>Kontakt</h1>
-			<p>Zapraszam do napisania mi wiadomości ...</p>
+			<p>Zapraszam do korzystania z formularza w celu napisania mi wiadomości...</p>
 			<form action="POST">
-				<input type="email" placeholder="Twoj adres E-Mail" required>
-				<textarea name="msg" id="msg" cols="15" rows="10" placeholder="Pytania ? Zapraszam." required></textarea>
-				<button>Wyślij</button>
+				<label for="topic">Temat:</label>
+				<input type="text" name="topic" id="topic">
+				<label for="email">E-Mail:</label>
+				<input type="email" name="email" id="email" required>
+				<label for="topic">Treść:</label>
+				<textarea name="msg" id="msg" cols="15" rows="10" required></textarea>
+				<button type="submit">Wyślij</button>
 			</form>
 			<p>... lub odwiedzenia moich kanałów social media:</p>
 			<p class="social-media">
@@ -65,11 +67,11 @@
 		</main>
 
 		<!-- FOOTER -->
-		<footer>&copy; 2019 - Design and code by
-			<a href="mailto: daniel@danielluty.com">Daniel Luty</a>
+		<footer>
+			&copy; 2019 - <a href="mailto: daniel@danielluty.com">Daniel Luty</a>
 		</footer>
-
 	</div>
+
 	<!-- SCRIPTS -->
 	<script src="./js/main.js"></script>
 </body>

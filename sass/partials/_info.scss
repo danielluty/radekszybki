@@ -1,0 +1,21 @@
+/* *** INFO *** */
+.main-info {
+    display: flex;
+    margin-top: 1rem;
+    
+
+    .intro-pic {
+        width: 35%;
+        height: 500px;
+        margin-left: 3rem;
+        background: linear-gradient(rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.3)), 
+                    url('../../img/ja.jpg') center / cover no-repeat;
+        border: 1px solid $text-dimmed;
+    }
+
+    .intro {
+        max-width: 65%;
+    }
+}
+
+/* *** INFO: Media Queries *** */
