@@ -27,7 +27,8 @@ svg {
     max-width: 100%;
 }
 
-h1, h2 {
+h1,
+h2 {
     letter-spacing: .2rem;
     font-weight: lighter;
 }
@@ -35,11 +36,13 @@ h1, h2 {
 h1 {
     font-size: 2.3rem;
     line-height: 1.2;
+    margin: 0 0 1rem;
+    ;
 }
 
 p {
-    line-height: 1.5;
-    letter-spacing: 1px;
+    line-height: 1.35;
+    letter-spacing: 2px;
     word-spacing: 2px;
 }
 
@@ -75,7 +78,7 @@ a {
 }
 
 main {
-    max-width: 95%;
+    padding: 0 2.5rem;
     margin: 0 auto 2rem;
 }
 
@@ -110,12 +113,16 @@ footer {
 
 @include tablet {
     body {
+        font-size: 1.3rem;
+    }
+}
+
+@include phone {
+    body {
         font-size: 1.2rem;
     }
 
     .wrapper {
-        main {
-            width: 85%;
-        }
+        main {}
     }
 }

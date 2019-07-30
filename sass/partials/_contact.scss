@@ -33,23 +33,31 @@
             align-self: flex-end;
 
             &:hover {
-                border: 2px solid rgb(116, 30, 30);
+                border: 2px solid rgb(190, 58, 58);
             }
         }
 
     }
 
     p {
-        margin: 1rem 0;
+        margin-bottom: 2rem;
         font-size: 1.5rem;
+        text-align: center;
     }
 
     .social-media {
         text-align: center;
+        margin: 4rem 0;
 
         i {
-            font-size: 4rem;
+            font-size: 5rem;
             margin: 2rem;
+            padding: 1.5rem;
+            transition: color .2s;
+
+            &:hover {
+                color: rgb(197, 31, 31);
+            }
         }
     }
 }
@@ -60,9 +68,21 @@
     .main-contact {
         .social-media {
             i {
-                font-size: 3rem;
+                font-size: 3.5rem;
+                margin: 1rem;
             }
-            
+
+        }
+    }
+}
+
+@include tablet {
+    .main-contact {
+        .social-media {
+            i {
+                font-size: 2.5rem;
+            }
+
         }
     }
 }

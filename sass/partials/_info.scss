@@ -1,21 +1,78 @@
 /* *** INFO *** */
 .main-info {
     display: flex;
+    justify-content: space-between;
     margin-top: 1rem;
     
-
-    .intro-pic {
-        width: 35%;
-        height: 500px;
-        margin-left: 3rem;
-        background: linear-gradient(rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.3)), 
-                    url('../../img/ja.jpg') center / cover no-repeat;
-        border: 1px solid $text-dimmed;
+    .intro {
+        width: 65%;
     }
 
-    .intro {
-        max-width: 65%;
+    .intro-pic {
+        width: 28%;
+        height: 400px;
+        background: linear-gradient(rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, .2)), 
+                    url('../../img/ja.jpg') center / cover no-repeat;
+        border: 1px solid $text-dimmed;
     }
 }
 
 /* *** INFO: Media Queries *** */
+
+@include desktop-s {
+    .main-info {
+
+        .intro {
+
+        }
+
+        .intro-pic {
+            width: 30%;
+            height: 450px;
+        }
+    }
+}
+
+@include desktop-xs {
+    .main-info {
+        flex-direction: column;
+
+        .intro {
+            width: 100%;
+        }
+
+        .intro-pic {
+            margin: 3rem auto 0;
+            width: 50%;
+            height: 390px;
+        }
+    }
+}
+
+@include phone {
+    .main-info {
+      
+
+        .intro {
+           
+        }
+
+        .intro-pic {
+            width: 70%;
+        }
+    }
+}
+
+@include phone-s {
+    .main-info {
+      
+
+        .intro {
+           
+        }
+
+        .intro-pic {
+            width: 100%;
+        }
+    }
+}

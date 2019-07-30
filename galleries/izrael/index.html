@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Radek Szybki - Fotografia Świata">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="icon" type="image/png" href="../../img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../../img/favicon-32x32.png" sizes="32x32">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>Izrael - Radek Szybki Foto</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- NAVIGATION -->
+        <nav class="navigation">
+
+            <!-- Desktop Navigation -->
+            <ul class="nav--desktop">
+                <li><a href="../../index.html">Info</a></li>
+                <li><a href="../../galerie.html">Galerie</a></li>
+                <li><a href="../../index.html"><img src="../../img/logo-light.svg" alt="Logo"></a></li>
+                <li><a href="../../news.html">News</a></li>
+                <li><a href="../../contact.html">Kontakt</a></li>
+            </ul>
+
+            <!-- Mobile Navigation -->
+            <a href="./index.html">
+                <img src="../../img/logo-slim.svg" alt="Mobile Logo" class="logo--mobile">
+            </a>
+
+            <ul class="nav--mobile">
+                <li class="close-btn">&times;</li>
+                <li><a href="../../index.html">Info</a></li>
+                <li><a href="../../galerie.html">Galerie</a></li>
+                <li><a href="../../news.html">News</a></li>
+                <li><a href="../../contact.html">Kontakt</a></li>
+            </ul>
+
+            <div class="toggler">MENU</div>
+
+        </nav>
+
+        <!-- CONTENT -->
+        <main class="main-galeria">
+            <h1>Izrael <span onclick="openSlider();currentSlide(1)">(otwórz galerie)</span></h1>
+            <p>Wysiadając z samolotu jeszcze na wojskowym lotnisku w Ejlacie można mieć
+                mieszane uczucia, jednak sprawa wygląda inaczej jadąc w kierunku północnym lub
+                południowym. Jadąc na północ przez pustynie Negew możemy się dostać m.in. do
+                Jerozolimy lub Tel Avivu a na południu czeka nas Morze Czerwone i Ejlat,
+                wciśnięty między Jordanie i Egipt a z naprzeciwka graniczący z Arabią Saudyjską. <br>
+                Jeżeli chcesz nurkować albo chociaż pobawić się w Snorkeling to Morze Czerwone
+                jest w światowej czołówce. Bogactwo fauny i flory jest ogromne, kilka metrów od
+                brzegu możemy obserwować ryby o przeróżnych kolorach i kształtach, żółwie morskie,
+                żywą rafę koralową i wiele wiele innych. Na każdym kroku w Ejlacie można wykupić
+                komercyjne nurkowanie, od jednego dnia po całe tygodnie jednak trzeba się liczyć
+                z wysokimi cenami. <br> Innym ciekawym miejscem w Izraelu jest pustynia Negew
+                zajmująca prawie połowę powierzchni całego kraju oraz między innymi krater Ramon
+                będący w jego środku. Widoki powalają ale powala przede wszystkim wysoka
+                temperatura, Izrael jest najlepszy na zimę, latem upały na pustyni dochodzą do
+                45 stopni celsjusza.</p>
+
+            <div class="image-grid">
+                <div class="column">
+                    <img src="./1.jpg" class="fit-image" onclick="openSlider();currentSlide(1)">
+                    <img src="./2.jpg" class="fit-image" onclick="openSlider();currentSlide(2)">
+                    <img src="./3.jpg" class="fit-image" onclick="openSlider();currentSlide(3)">
+                    <img src="./4.jpg" class="fit-image" onclick="openSlider();currentSlide(4)">
+                    <img src="./5.jpg" class="fit-image" onclick="openSlider();currentSlide(5)">
+                    <img src="./6.jpg" class="fit-image" onclick="openSlider();currentSlide(6)">
+                    <img src="./7.jpg" class="fit-image" onclick="openSlider();currentSlide(7)">
+                    <img src="./9.jpg" class="fit-image" onclick="openSlider();currentSlide(8)">
+                </div>
+                <div class="column">
+                    <img src="./8.jpg" class="fit-image" onclick="openSlider();currentSlide(9)">
+                    <img src="./10.jpg" class="fit-image" onclick="openSlider();currentSlide(10)">
+                    <img src="./11.jpg" class="fit-image" onclick="openSlider();currentSlide(11)">
+                    <img src="./12.jpg" class="fit-image" onclick="openSlider();currentSlide(12)">
+                    <img src="./13.jpg" class="fit-image" onclick="openSlider();currentSlide(13)">
+                    <img src="./14.jpg" class="fit-image" onclick="openSlider();currentSlide(14)">
+                    <img src="./15.jpg" class="fit-image" onclick="openSlider();currentSlide(15)">
+                </div>
+                <div class="column">
+                    <img src="./16.jpg" class="fit-image" onclick="openSlider();currentSlide(16)">
+                    <img src="./17.jpg" class="fit-image" onclick="openSlider();currentSlide(17)">
+                    <img src="./18.jpg" class="fit-image" onclick="openSlider();currentSlide(18)">
+                    <img src="./19.jpg" class="fit-image" onclick="openSlider();currentSlide(19)">
+                    <img src="./20.jpg" class="fit-image" onclick="openSlider();currentSlide(20)">
+                    <img src="./21.jpg" class="fit-image" onclick="openSlider();currentSlide(21)">
+                    <img src="./22.jpg" class="fit-image" onclick="openSlider();currentSlide(22)">
+                    <img src="./23.jpg" class="fit-image" onclick="openSlider();currentSlide(23)">
+                </div>
+            </div>
+
+            <!-- SLIDER -->
+            <div id="image-slider" class="image-slider">
+
+                <!-- CLOSE BUTTON -->
+                <span class="close" onclick="closeSlider()">&times;</span>
+
+                <!-- SLIDER CONTENT -->
+                <div class="slider-content">
+
+                    <!-- IMAGE VIEWER -->
+                    <div class="slides">
+                        <div class="slides-number">1 / 23</div>
+                        <img src="./1.jpg" class="portrait-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">2 / 23</div>
+                        <img src="./2.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">3 / 23</div>
+                        <img src="./3.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">4 / 23</div>
+                        <img src="./4.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">5 / 23</div>
+                        <img src="./5.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">6 / 23</div>
+                        <img src="./6.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">7 / 23</div>
+                        <img src="./7.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">8 / 23</div>
+                        <img src="./9.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">9 / 23</div>
+                        <img src="./8.jpg" class="portrait-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">10 / 23</div>
+                        <img src="./10.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">11 / 23</div>
+                        <img src="./11.jpg" class="portrait-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">12 / 23</div>
+                        <img src="./12.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">13 / 23</div>
+                        <img src="./13.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">14 / 23</div>
+                        <img src="./14.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">15 / 23</div>
+                        <img src="./15.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">16 / 23</div>
+                        <img src="./16.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">17 / 23</div>
+                        <img src="./17.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">18 / 23</div>
+                        <img src="./18.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">19 / 23</div>
+                        <img src="./19.jpg" class="portrait-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">20 / 23</div>
+                        <img src="./20.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">21 / 23</div>
+                        <img src="./21.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">22 / 23</div>
+                        <img src="./22.jpg" class="landscape-img">
+                    </div>
+                    <div class="slides">
+                        <div class="slides-number">23 / 23</div>
+                        <img src="./23.jpg" class="landscape-img">
+                    </div>
+
+                    <!-- NEXT & PREVIOUS BUTTONS -->
+                    <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>Copyright &copy; 2019 - Radosław Pośpiech</footer>
+
+    </div>
+    <!-- SCRIPTS -->
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>
