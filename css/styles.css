@@ -558,10 +558,8 @@ footer {
       -o-transition: color .2s;
       transition: color .2s;
       letter-spacing: .2rem; }
-      .navigation .nav--desktop li a:hover {
-        color: #be3a3a; }
-      .navigation .nav--desktop li a.active {
-        color: #c51f1f; }
+      .navigation .nav--desktop li a.active, .navigation .nav--desktop li a:hover {
+        color: #c23939; }
       .navigation .nav--desktop li a img {
         width: 250px;
         opacity: .9; }
@@ -653,7 +651,7 @@ footer {
         .navigation .nav--mobile li a {
           font-size: 1.7rem; }
           .navigation .nav--mobile li a.active {
-            color: #c51f1f; }
+            color: #964343; }
     .navigation .logo--mobile {
       display: inline-block;
       width: 80px; }
@@ -679,7 +677,7 @@ footer {
   .main-info .intro {
     width: 65%; }
     .main-info .intro h1 span {
-      color: rgba(190, 58, 58, 0.979); }
+      color: #c23939; }
   .main-info .intro-pic {
     width: 28%;
     height: 390px;
@@ -849,7 +847,7 @@ footer {
       -o-transition: color .2s;
       transition: color .2s; }
       .main-contact .social-media i:hover {
-        color: #c51f1f; }
+        color: #c23939; }
 
 /* *** CONTACT: Media Queries *** */
 @media only screen and (max-width: 992px) {

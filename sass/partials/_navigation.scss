@@ -17,12 +17,8 @@
                 transition: color .2s;
                 letter-spacing: .2rem;
 
-                &:hover {
-                    color: rgb(190, 58, 58);
-                }
-
-                &.active {
-                    color: rgb(197, 31, 31);
+                &.active, &:hover {
+                    color: $text-red;
                 }
 
                 img {
@@ -146,7 +142,7 @@
                     font-size: 1.7rem;
 
                     &.active {
-                        color: rgb(197, 31, 31);
+                        color: rgb(150, 67, 67);
                     }
                 }
             }
