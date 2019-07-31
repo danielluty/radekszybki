@@ -1,7 +1,6 @@
 /* *** GALLERY *** */
 
 .main-galeria {
-
     h1 {
         span {
             cursor: pointer;
@@ -31,10 +30,11 @@
                 cursor: pointer;
                 filter: sepia(40%);
                 opacity: .7;
-                
+                margin: .3rem;
+
                 &:hover {
                     filter: sepia(0);
-                    opacity: 1;   
+                    opacity: 1;
                 }
             }
         }
@@ -101,11 +101,11 @@
                 }
 
                 .portrait-img {
-                    height: 78vh;
+                    max-height: 78vh;
                 }
 
                 .landscape-img {
-                    width: 76vw;
+                    max-height: 95vh;
                 }
             }
 
@@ -146,3 +146,41 @@
 }
 
 /* *** GALLERY: Media Queries *** */
+
+@include desktop-xs {
+    .main-galeria {
+        h1 {
+            span {
+                display: block;
+                margin-top: .2rem;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .main-galeria {
+        .image-grid {
+            .column {
+                .fit-image {
+                    filter: sepia(0);
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}
+
+@include phone {
+    .main-galeria {
+        .image-grid {
+            flex-direction: column;
+
+            .column {
+                .fit-image {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}

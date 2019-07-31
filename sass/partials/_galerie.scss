@@ -54,16 +54,21 @@
             figure {
                 img {
                     filter: grayscale(0);
+                    opacity: .7;
                 }
             }
         }
     }
 }
 
+@include phone {
+}
+
 @include phone-s {
     .main-galerie {
         a {
             width: 100%;
+            margin-bottom: 1rem;
         }
     }
 }

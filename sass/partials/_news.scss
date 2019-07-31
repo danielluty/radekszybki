@@ -1,22 +1,37 @@
 /* *** NEWS *** */
 
 .main-news {
-    article {
-        margin: 4rem 0;
+    width: 80%;
 
-        span {
-            font-style: italic;
+    article {
+        margin: 2rem 0 3rem;
+
+        h1 {
+            margin: 0;
         }
 
         h2 {
+            font-size: 1.7rem;
             margin: 1rem 1rem 0;
+            font-style: italic;
         }
 
         p {
             padding: .5rem 0 1.5rem;
         }
     }
-
 }
 
 /* *** NEWS: Media Queries *** */
+
+@include tablet {
+    .main-news {
+        width: 90%;
+    }
+}
+
+@include phone {
+    .main-news {
+        width: 100%;
+    }
+}

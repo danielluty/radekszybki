@@ -2,14 +2,17 @@
 (() => {
     const toggler = document.querySelector('.toggler'),
         navMenu = document.querySelector('.nav--mobile'),
-        closeBtn = document.querySelector('.close-btn');
+        closeBtn = document.querySelector('.close-btn'),
+        body = document.querySelector('body');
 
     toggler.addEventListener('click', () => {
         navMenu.classList.add('show-nav');
+        body.style.overflow = 'hidden';
     });
 
     closeBtn.addEventListener('click', () => {
         navMenu.classList.remove('show-nav');
+        body.style.overflow = 'auto';
     });
 })();
 
