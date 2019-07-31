@@ -27,6 +27,15 @@
 @include tablet {
     .main-news {
         width: 90%;
+        
+        article {
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.4rem;  
+            }
+        }
     }
 }
 

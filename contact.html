@@ -56,14 +56,14 @@
 			</p>
 
 			<p>... lub napisania mi wiadomości:</p>
-			<form action="POST">
-				<label for="topic">Temat:</label>
-				<input type="text" name="topic" id="topic">
+			<form role="form" action="/send-email" method="post" class="form">
+				<label for="subject">Temat:</label>
+				<input type="text" id="subject" name="subject" required>
 				<label for="email">E-Mail:</label>
 				<input type="email" name="email" id="email" required>
-				<label for="topic">Treść:</label>
-				<textarea name="msg" id="msg" cols="15" rows="10" required></textarea>
-				<button type="submit">Wyślij</button>
+				<label for="message">Treść:</label>
+				<textarea type="textarea" name="message" id="message" cols="15" rows="10" required></textarea>
+				<button type="submit" id="submit" name="submit">Wyślij</button>
 			</form>
 
 			<p class="luty">Portfolio written & designed by <a href="mailto:daniel@danielluty.com">Daniel Luty</a></p>

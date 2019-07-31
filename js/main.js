@@ -17,6 +17,7 @@
 })();
 
 
+
 // Slider
 /* Show image when clicked */
 function openSlider() {

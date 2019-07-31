@@ -165,6 +165,7 @@
             border: 1px solid $text-dimmed;
             padding: .6rem .4rem;
             margin-bottom: .2rem;
+            -webkit-tap-highlight-color: transparent;
         }
     }
 }
