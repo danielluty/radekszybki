@@ -95,7 +95,7 @@ typings/
 ### Prepros ###
 # Config Prepros files to ignore
 prepros.cfg
-prepros-6.config/
+prepros-6.config
 
 ### Sass ###
 sass/
