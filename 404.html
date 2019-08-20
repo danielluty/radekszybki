@@ -4,57 +4,52 @@
     <meta charset="utf-8">
     <title>Page Not Found</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-
-        * {
-            line-height: 1.2;
-            margin: 0;
-        }
-
-        html {
-            color: #888;
-            display: table;
-            font-family: sans-serif;
-            height: 100%;
-            text-align: center;
-            width: 100%;
-        }
-
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
-        }
-
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
-
-        p {
-            margin: 0 auto;
-            width: 280px;
-        }
-
-        @media only screen and (max-width: 280px) {
-
-            body, p {
-                width: 95%;
-            }
-
-            h1 {
-                font-size: 1.5em;
-                margin: 0 0 0.3em;
-            }
-
-        }
-
-    </style>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <h1>Page Not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
+	<div class="wrapper">
+
+		<!-- NAVIGATION -->
+		<nav class="navigation">
+
+			<!-- Desktop Navigation -->
+			<ul class="nav--desktop">
+				<li><a href="./" class="active">Info</a></li>
+				<li><a href="./galerie">Galerie</a></li>
+				<li><a href="./"><img src="./img/logo-light.svg" alt="Logo"></a></li>
+				<li><a href="./news">News</a></li>
+				<li><a href="./contact">Kontakt</a></li>
+			</ul>
+
+			<!-- Mobile Navigation -->
+			<a href="#">
+				<img src="./img/logo-slim.svg" alt="Mobile Logo" class="logo--mobile">
+			</a>
+
+			<ul class="nav--mobile">
+				<li class="close-btn">&times;</li>
+				<li><a href="./index.html" class="active">Info</a></li>
+				<li><a href="./galerie.html">Galerie</a></li>
+				<li><a href="./news.html">News</a></li>
+				<li><a href="./contact.html">Kontakt</a></li>
+			</ul>
+
+			<div class="toggler">MENU</div>
+
+		</nav>
+
+		<!-- CONTENT -->
+		<main class="main-info">
+			<p>Nie znaleziono strony.</p>
+		</main>
+
+		<!-- FOOTER -->
+		<footer>Copyright &copy; 2019 - Radosław Pośpiech</footer>
+
+	</div>
+
+	<!-- SCRIPTS -->
+	<script src="./js/main.js"></script>
 </body>
 </html>
 <!-- IE needs 512+ bytes: https://blogs.msdn.microsoft.com/ieinternals/2010/08/18/friendly-http-error-pages/ -->
