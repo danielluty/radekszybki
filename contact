@@ -54,12 +54,16 @@
 
 			<p>... lub napisania mi wiadomości:</p>
 			<form action="https://formspree.io/lutydaniel@gmail.com" method="POST" class="form">
+
 				<label for="subject">Temat:</label>
 				<input type="text" id="subject" name="subject" required>
+
 				<label for="email">E-Mail:</label>
-				<input type="email" name="email" id="email" required>
+				<input type="email" id="email" name="email" required>
+
 				<label for="message">Treść:</label>
-				<textarea type="textarea" name="message" id="message" cols="15" rows="10" required></textarea>
+				<textarea name="text" id="text" cols="15" rows="10" required></textarea>
+
 				<button type="submit" id="submit" name="submit">Wyślij</button>
 			</form>
 
@@ -72,6 +76,7 @@
 	</div>
 
 	<!-- SCRIPTS -->
+	
 	<script src="./js/main.js"></script>
 </body>
 

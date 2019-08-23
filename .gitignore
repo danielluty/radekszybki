@@ -104,4 +104,6 @@ sass/
 *.sass.map
 *.scss.map
 
+.env
+
 # End of https://www.gitignore.io/api/node,sass,prepros
