@@ -3,7 +3,7 @@
 # Edit at https://www.gitignore.io/?templates=node,sass,prepros
 
 # Photos
-
+galleries/
 
 ### Node ###
 # Logs

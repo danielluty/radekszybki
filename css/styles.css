@@ -420,8 +420,8 @@ template {
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
 
 html,
 body {
@@ -761,15 +761,15 @@ footer {
     margin: 2rem 0 3rem; }
     .main-news article h2 {
       margin: 1rem 0;
-      font-weight: bolder; }
+      font-size: 1rem;
+      text-transform: uppercase; }
     .main-news article p {
-      padding: .5rem 0 1.5rem; }
+      padding: .5rem 0 2rem; }
     .main-news article a {
-      font-style: italic;
       font-weight: bolder;
       background: rgba(220, 220, 240, 0.65);
       color: #1d191e;
-      padding: .4rem .6rem .3rem .4rem;
+      padding: .3rem .4rem;
       border-radius: 2px; }
       .main-news article a span {
         position: relative;
@@ -881,19 +881,33 @@ footer {
       margin-top: 0; } }
 
 /* *** GALLERY *** */
-.main-galeria h1 {
-  text-align: center; }
-  .main-galeria h1 span {
+.main-galeria h1, .main-galeria h3 {
+  text-align: center;
+  padding: 1rem 0; }
+  .main-galeria h1 span, .main-galeria h3 span {
     cursor: pointer;
     font-size: 1.2rem;
     text-decoration: underline; }
-    .main-galeria h1 span:hover {
+    .main-galeria h1 span:hover, .main-galeria h3 span:hover {
       color: #be3a3a; }
 
 .main-galeria p {
   width: 800px;
-  max-width: 93%;
-  margin: 0 auto 3rem; }
+  max-width: 96%;
+  margin: 0 auto 1rem;
+  text-indent: 1rem; }
+  .main-galeria p::first-letter {
+    font-size: 1.3rem;
+    line-height: 1; }
+
+.main-galeria hr {
+  margin: 2rem 0;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(220, 220, 240, 0)), color-stop(rgba(220, 220, 240, 0.75)), to(rgba(220, 220, 240, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(220, 220, 240, 0), rgba(220, 220, 240, 0.75), rgba(220, 220, 240, 0));
+  background-image: -o-linear-gradient(left, rgba(220, 220, 240, 0), rgba(220, 220, 240, 0.75), rgba(220, 220, 240, 0));
+  background-image: linear-gradient(to right, rgba(220, 220, 240, 0), rgba(220, 220, 240, 0.75), rgba(220, 220, 240, 0)); }
 
 .main-galeria .image-grid {
   display: -webkit-box;
@@ -1017,7 +1031,7 @@ footer {
     margin-top: .2rem; } }
 
 @media only screen and (max-width: 768px) {
-  .main-galeria .image-grid .column .fit-image {
+  .main-galeria .column .fit-image {
     -webkit-filter: sepia(0);
     filter: sepia(0);
     opacity: .8; } }
