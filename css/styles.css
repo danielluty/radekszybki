@@ -443,15 +443,18 @@ svg {
 h1,
 h2 {
   letter-spacing: .2rem;
-  font-weight: lighter; }
+  font-weight: lighter;
+  line-height: 1.5; }
 
 h1 {
-  font-size: 2.2rem;
-  line-height: 1.2;
+  font-size: 1rem;
   margin: 0 0 1rem; }
 
+h2 {
+  font-size: .9rem; }
+
 p {
-  line-height: 1.35;
+  line-height: 1.8;
   letter-spacing: 2px;
   word-spacing: 2px; }
 
@@ -500,39 +503,23 @@ footer {
 /* *** GENERAL STYLING: Media Queries *** */
 @media only screen and (max-width: 1280px) {
   body {
-    background-size: cover;
-    font-size: 1.15rem; }
+    background-size: cover; }
   .wrapper {
     max-width: 1100px;
-    margin: 0 auto; }
-    .wrapper h1 {
-      font-size: 1.4rem; } }
-
-@media only screen and (max-width: 992px) {
-  body {
-    font-size: 1.1rem; } }
+    margin: 0 auto; } }
 
 @media only screen and (max-width: 768px) {
   p {
-    line-height: 1.25;
     letter-spacing: 1px;
-    word-spacing: 1px; }
-  .wrapper main h1 {
-    font-size: 1.4rem; } }
+    word-spacing: 1px; } }
 
 @media only screen and (max-width: 768px) {
   footer {
     font-size: 1.05rem; } }
 
 @media only screen and (max-width: 667px) {
-  body {
-    font-size: 1rem; }
-  p {
-    line-height: 1.2; }
   .wrapper main {
-    padding: 0 1.4rem; }
-    .wrapper main h1 {
-      font-size: 1.3rem; } }
+    padding: 0 1.4rem; } }
 
 /* *** NAVIGATION *** */
 .navigation .nav--desktop {
@@ -772,23 +759,21 @@ footer {
   width: 80%; }
   .main-news article {
     margin: 2rem 0 3rem; }
-    .main-news article h1 {
-      margin: 0; }
     .main-news article h2 {
-      font-size: 1.7rem;
-      margin: 1rem 1rem 0 0;
-      font-style: italic; }
+      margin: 1rem 0;
+      font-weight: bolder; }
     .main-news article p {
       padding: .5rem 0 1.5rem; }
+    .main-news article a {
+      font-style: italic; }
+      .main-news article a span {
+        position: relative;
+        bottom: 3px; }
 
 /* *** NEWS: Media Queries *** */
 @media only screen and (max-width: 768px) {
   .main-news {
-    width: 90%; }
-    .main-news article h1 {
-      font-size: 1.8rem; }
-    .main-news article h2 {
-      font-size: 1.4rem; } }
+    width: 90%; } }
 
 @media only screen and (max-width: 667px) {
   .main-news {
