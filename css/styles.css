@@ -434,7 +434,7 @@ body {
   background: fixed linear-gradient(rgba(29, 25, 30, 0.99) 30%, rgba(29, 25, 30, 0.88)), fixed url("../../img/kontynenty-radek.svg") center/90% no-repeat, #1d191e;
   font-family: "Montserrat", sans-serif;
   color: rgba(220, 220, 240, 0.95);
-  font-size: 1.2rem; }
+  font-style: 1.1rem; }
 
 img,
 svg {
@@ -447,11 +447,11 @@ h2 {
   line-height: 1.5; }
 
 h1 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 0 0 1rem; }
 
 h2 {
-  font-size: .9rem; }
+  font-size: 1.25rem; }
 
 p {
   line-height: 1.8;
@@ -463,9 +463,9 @@ ul {
 
 a {
   text-decoration: none;
+  text-transform: uppercase;
   color: rgba(220, 220, 240, 0.65);
-  cursor: pointer;
-  text-transform: uppercase; }
+  cursor: pointer; }
   a:hover {
     color: rgba(220, 220, 240, 0.95); }
   a:active {
@@ -765,10 +765,18 @@ footer {
     .main-news article p {
       padding: .5rem 0 1.5rem; }
     .main-news article a {
-      font-style: italic; }
+      font-style: italic;
+      font-weight: bolder;
+      background: rgba(220, 220, 240, 0.65);
+      color: #1d191e;
+      padding: .4rem .3rem;
+      border-radius: 2px; }
       .main-news article a span {
         position: relative;
         bottom: 3px; }
+      .main-news article a:hover {
+        background: rgba(220, 220, 240, 0.95);
+        color: #1d191e; }
 
 /* *** NEWS: Media Queries *** */
 @media only screen and (max-width: 768px) {
